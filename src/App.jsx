@@ -1,4 +1,4 @@
-import { BrowserRouter as BRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routers, Routes, Route } from "react-router-dom";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import RootLayout from "./pages/RootLayout";
@@ -8,7 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import Settings from "./pages/Settings";
 function App() {
   return (
-    <BRouter>
+    <Routers>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Route>
       </Routes>
-    </BRouter>
+    </Routers>
   );
 }
 
